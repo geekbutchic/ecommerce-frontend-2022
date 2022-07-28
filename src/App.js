@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 //rafce
 const App = () => {
   return (
-    <>
-      <h1>Dolce Vita</h1>
-    </>
-  )
-} 
+    <React.Fragment>
+      <main>
+        <Header />
+        <h1>Dolce Vita</h1>
+      </main>
+      <Footer />
+    </React.Fragment>
+  );
+};
 
-export default App
+export default App;

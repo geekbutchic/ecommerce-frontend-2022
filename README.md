@@ -15,3 +15,7 @@
 * Displays Functional Component < h1 > heading.
 
 * Adds node_modules/ and .env to .gitignore file.  
+
+### Create Header and Footer install React Bootstrap.
+
+
