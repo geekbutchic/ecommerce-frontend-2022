@@ -18,4 +18,7 @@
 
 ### Create Header and Footer install React Bootstrap.
 
-
+* Creates Component File
+* Adds Header Functional Component and Footer Functional Component.
+* Installs React Bootstrap for Styling and !(https://bootswatch.com/) for color themes.
+* Bootswatch - Click on download bootstrap.min.css bring in source file, require file into index.js.
