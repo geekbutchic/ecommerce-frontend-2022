@@ -54,7 +54,7 @@ const products = [
   {
     _id: "5",
     name: "DIORCLUB M3U",
-    image: "/images/image-5.jpg",
+    image: "/images/image-5.jpeg",
     description:
       "The DiorClub M3U mask sunglasses have a graphic shape with sportswear appeal. The white acetate and gold-finish metal frame contrasts with gray line details and a 'CHRISTIAN DIOR' signature. The silver mirrored lens lends a contemporary Dior look.",
     brand: "CHRISTIAN DIOR",
@@ -66,8 +66,8 @@ const products = [
   },
   {
     _id: "6",
-    name: "DIORSIGNATURE S2U",
-    image: "/images/image-6.jpg",
+    name: "DIOR S2U",
+    image: "/images/image-6.jpeg",
     description:
       "The DiorSignature S2U sunglasses enhance the now iconic House line. The couture-spirit design is distinguished by a low rectangular flat-top shape. The graphic white acetate frame showcases 'CHRISTIAN DIOR PARIS' signature temples, embellished with gold-finish metal lines that end at the blue lenses. The modern sunglasses will lend a resolutely Dior style to any look.",
     brand: "CHRISTIAN DIOR PARIS",
