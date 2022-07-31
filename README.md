@@ -1,4 +1,4 @@
-# E-C ommerce Store Frontend 2022
+# E-Commerce Store Frontend 2022
 
 ### Package Installs for Frontend
 
@@ -22,3 +22,4 @@
 * Adds Header Functional Component and Footer Functional Component.
 * Installs React Bootstrap for Styling and !(https://bootswatch.com/) for color themes.
 * Bootswatch - Click on download bootstrap.min.css bring in source file, require file into index.js.
+* Adds Footer styling with React Bootstrap 
