@@ -1,13 +1,22 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import Header from '../components/Header';
-import Footer from '../components/Footer'
+import { Row, Col } from 'react-bootstrap';
+import products from '../products';
 
+//Components
 const HomeScreen = () => {
   return (
-    <div>
-        HomeScreen
-    </div>
+    <React.Fragment>
+        <h3>Latest Eye Wear</h3>
+        <Row>
+        {products.map(product => (
+          //loops through products to display names
+          //bootstrap sizing relative to screen size
+          <Col sm={12} md={6} lg={4} xl={3}>
+          <h6>{product.name}</h6>
+          </Col>
+        ))}
+        </Row>
+    </React.Fragment>
   )
 }
 
