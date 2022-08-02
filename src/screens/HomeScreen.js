@@ -8,13 +8,13 @@ import Product from '../components/Product';
 const HomeScreen = () => {
   return (
     <React.Fragment>
-      <h5 className="text-center">Latest Eye Wear</h5>
+      <h3 className="text-center">LATEST EYE WEAR</h3>
       <Row>
         {products.map((product, index) => (
           //Loops through products to display names
           //Bootstrap sizing relative to screen size
           //Product component
-          <Col sm={12} md={6} lg={4} xl={3} key={index}>
+          <Col sm={12} md={6} lg={4} xl={4} key={index}>
             <Product product={product}/>
           </Col>
         ))}
