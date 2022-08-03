@@ -8,7 +8,9 @@ import Product from '../components/Product';
 const HomeScreen = () => {
   return (
     <React.Fragment>
-      <h3 className="text-center">LATEST EYE WEAR</h3>
+      <h3 
+      style={{color : "yellowgreen"}} 
+      className="text-center">LATEST EYE WEAR</h3>
       <Row>
         {products.map((product, index) => (
           //Loops through products to display names

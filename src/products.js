@@ -9,7 +9,7 @@ const products = [
     category: "Accessories",
     price: 590.99,
     countInStock: 7,
-    rating: 4.7,
+    rating: 4.5,
     numReviews: 10,
   },
   {
@@ -22,7 +22,7 @@ const products = [
     category: "Accessories",
     price: 470.99,
     countInStock: 9,
-    rating: 4.2,
+    rating: 4.0,
     numReviews: 5,
   },
   {
@@ -35,7 +35,7 @@ const products = [
     category: "Accessories",
     price: 450.99,
     countInStock: 5,
-    rating: 3.9,
+    rating: 3.5,
     numReviews: 12,
   },
   {
@@ -48,7 +48,7 @@ const products = [
     category: "Accessories",
     price: 610.99,
     countInStock: 11,
-    rating: 5,
+    rating: 5.0,
     numReviews: 17,
   },
   {
@@ -61,7 +61,7 @@ const products = [
     category: "Accessories",
     price: 590.99,
     countInStock: 7,
-    rating: 4.2,
+    rating: 4.0,
     numReviews: 10,
   },
   {

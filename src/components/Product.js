@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import "./Product.css";
+import Rating from '../components/Rating';
 
-// my = margin all around 
+// my = margin all around
 // p = padding all around
 // product - passed in through props - destructured for full access
 const Product = ({ product }) => {
@@ -13,21 +13,26 @@ const Product = ({ product }) => {
       </a>
 
       <Card.Body>
-        <a href={`/product/${product._id}`}>
-        <Card.Title as="div" id="card-title" className="text-center">
-            <strong id="title">{product.name}</strong>
-        </Card.Title>
+        <a 
+        style={{ textDecoration: "none" }} 
+        href={`/product/${product._id}`}
+        >
+          <Card.Title as="div" id="card-title" className="text-center">
+            <h5 style={{ color: "greenyellow" }}>{product.name}</h5>
+          </Card.Title>
         </a>
 
         <Card.Text as="div">
-            <div className="my-3 text-center">
-              {product.rating} from {product.numReviews} reviews
-            </div>
-        </Card.Text>
+          <Rating 
+          value={product.rating} 
+          text={`${product.numReviews} Reviews`}/>
+        </Card.Text> 
 
-        <Card.Text as="h5" className="text-center">
+        <Card.Text 
+        as="h5" className="text-center">
           ${product.price}
         </Card.Text>
+
       </Card.Body>
     </Card>
   );

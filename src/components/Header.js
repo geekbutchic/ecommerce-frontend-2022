@@ -9,22 +9,25 @@ const Header = () => {
         id="navbar"
         bg="black"
         variant="dark"
-        expand="sm"
+        expand="md"
         collapseOnSelect
       >
-        <Container style={{ height : "150px"}}>
+        <Container className="py-4">
           <Navbar.Brand href="/">
-          <h1 style={{ color: "white"}}><i className="fa-regular fa-eye"></i> OCCHI</h1>
+          <h1 style={{ color: "yellowgreen"}}><i className="fa-regular fa-eye"></i> OCCHI</h1>
           </Navbar.Brand>
           <Nav className="ml-auto">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
+              
               <Nav.Link href="/cart">
-                <h4 style={{ color : "white"}}><i className="fab fa-opencart"></i> CART</h4>
+                <h4 style={{ color : "yellowgreen"}}><i className="fab fa-opencart"></i> CART</h4>
               </Nav.Link>
+
               <Nav.Link href="/login">
-                <h4 style={{ color : "white"}}><i className="fas fa-user-circle"></i> SIGN IN</h4>
+                <h4 style={{ color : "yellowgreen"}}><i className="fas fa-user-circle"></i> SIGN IN</h4>
               </Nav.Link>
+
             </Navbar.Collapse>
           </Nav>
         </Container>
