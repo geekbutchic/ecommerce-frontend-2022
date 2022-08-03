@@ -23,3 +23,32 @@
 * Installs React Bootstrap for Styling and !(https://bootswatch.com/) for color themes.
 * Bootswatch - Click on download bootstrap.min.css bring in source file, require file into index.js.
 * Adds Footer styling with React Bootstrap 
+* Adds Header styling using a combination of Bootswatch and React Bootstrap.
+* Adds awesome font icons for cart and sign-in.
+
+### Create HomeScreen component for display of product images.
+
+* Uses map function to loop through the images in an array.  By using React Bootstrap the Row of columns can display the number of images based on screen height.
+* Passes in the Product Component through props.
+
+### Create Product Component 
+* Once we have access to the product I used a destructured method to gain access to entire product ({ product }).  I can now display the product title, name, image, reviews, etc.
+
+### Create Ratings Component
+* Creating a rating component allows for static reviews to be displayed based on json created with product info.  Ternary statement will either display the star value or skip it depending on value. 
+
+```javascript
+<i
+   style={{ color: "black" }}
+   className={
+     value >= 1
+       ? "fas fa-star"
+       : value >= 0.5
+       ? "fas fa-star-half-alt"
+       : "far fa-star"
+   }
+ ></i>
+```
+* If value is >= greater than or equal to 1 show full star value, if value is 0.5 show half star value by using awesome fonts. This checks each star value up to 5 star rating.
+
+# 
