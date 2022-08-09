@@ -1,18 +1,24 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
 import { Container } from "react-bootstrap";
-import HomeScreen from './screens/HomeScreen'
+import { Routes, Route } from "react-router-dom";
+
 //imd script - import destructuring
 
-//rafce
+//rafce - functional arrow component
 const App = () => {
   return (
     <React.Fragment>
       <Header />
       <main className="py-2">
         <Container>
-          <HomeScreen/>
+          <Routes>
+            <Route exact path="/" element={<HomeScreen />} />
+            <Route path="/product/:id" element={<ProductScreen />} />
+          </Routes>
         </Container>
       </main>
       <Footer />

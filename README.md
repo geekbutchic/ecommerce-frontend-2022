@@ -51,4 +51,21 @@
 ```
 * If value is >= greater than or equal to 1 show full star value, if value is 0.5 show half star value by using awesome fonts. This checks each star value up to 5 star rating.
 
-# 
+### Installs React Router and React Router Bootstrap
+> npm install react-router-dom@6 
+> npm install react-router-bootstrap
+
+* Done earlier index.js is set up for react-router-dom@6.
+* In App.js require in React Router.
+```javascript
+import { Routes, Route } from "react-router-dom";
+// On top of App.js
+```
+* When establishing routes you need to wrap <Routes> in <Route>
+```javascript
+<Routes>
+<Route path="/" element={<HomeScreen/>}>
+<Route path="/" element={<ProductScreen/>}>
+</Routes>
+```
+* Once Routes are established.  Link Container from React Bootstrap will need to be implemented since React Router will not work

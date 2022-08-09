@@ -1,6 +1,7 @@
 import React from "react";
+import Rating from "../components/Rating";
 import { Card } from "react-bootstrap";
-import Rating from '../components/Rating';
+import { Link } from "react-router-dom";
 
 // my = margin all around
 // p = padding all around
@@ -8,31 +9,30 @@ import Rating from '../components/Rating';
 const Product = ({ product }) => {
   return (
     <Card className="my-3 p-3 rounded">
-      <a href={`/product/${product._id}`}>
+      <Link to={`/product/${product._id}`}>
         <Card.Img src={product.image} variant="top" />
-      </a>
+      </Link>
 
       <Card.Body>
-        <a 
+        <Link 
         style={{ textDecoration: "none" }} 
-        href={`/product/${product._id}`}
+        to={`/product/${product._id}`}
         >
           <Card.Title as="div" id="card-title" className="text-center">
             <h5 style={{ color: "greenyellow" }}>{product.name}</h5>
           </Card.Title>
-        </a>
+        </Link>
 
         <Card.Text as="div">
-          <Rating 
-          value={product.rating} 
-          text={`${product.numReviews} Reviews`}/>
-        </Card.Text> 
-
-        <Card.Text 
-        as="h5" className="text-center">
-          ${product.price}
+          <Rating
+            value={product.rating}
+            text={`${product.numReviews} Reviews`}
+          />
         </Card.Text>
 
+        <Card.Text as="h5" className="text-center">
+          ${product.price}
+        </Card.Text>
       </Card.Body>
     </Card>
   );
