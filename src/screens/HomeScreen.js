@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import products from "../products";
 import Product from "../components/Product";
+const axios = require("axios");
 
-//Components
-//Row
+const urlEndpoint = "http://localhost:4000";
+// Components
+// Row
+
 const HomeScreen = () => {
+  //use state hook
+  const [products, setProducts] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     const apiResponse = await fetch(`${urlEndpoint}/server/api/products`);
+  //     //.json all fetch responses - not parsed
+  //     //axios does parse
+  //     const apiJSON = await apiResponse.json();
+  //     setProducts(apiJSON);
+  //   };
+  //   fetchProducts();
+  // },[]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get(`${urlEndpoint}/server/api/products`);
+      setProducts(data);
+    };
+    fetchProducts();
+  }, []);
+
   return (
     <React.Fragment>
       <h3 style={{ color: "yellowgreen" }} className="text-center">
