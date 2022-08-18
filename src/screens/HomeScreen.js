@@ -3,7 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import Product from "../components/Product";
 const axios = require("axios");
 
-const urlEndpoint = "http://localhost:4000";
+// const urlEndpoint = "http://localhost:4000";
+const urlEndpoint = process.env.REACT_APP_URL_ENDPOINT;
 // Components
 // Row
 

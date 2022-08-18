@@ -94,4 +94,16 @@ root.render(
 ```
 * Setup Frontend to be able receive backend data.
 * Git push to main before setting up Heroku remote.
-* 
+* > heroku login
+* > press any key
+* > heroku create -a app-name
+* This should create two https links
+* Add the url as a new environment variable in the Heroku dashboard.
+* > https://dashboard.heroku.com/
+* Click on the app you've deployed.
+* Go to settings.
+* Click on Reveal Config Vars.
+* Add the environment variable as a new config bar.
+* Deploy client code: 
+* > git push heroku main
+* If everything has been set up correctly, you should be able to display client side.

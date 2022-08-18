@@ -5,7 +5,8 @@ import Rating from "../components/Rating";
 import { useParams } from "react-router-dom";
 const axios = require("axios");
 
-const urlEndpoint = "http://localhost:4000";
+// const urlEndpoint = "http://localhost:4000";
+const urlEndpoint = process.env.REACT_APP_URL_ENDPOINT;
 // md = column space
 // fluid = keeps image inside of container
 const ProductScreen = () => {
