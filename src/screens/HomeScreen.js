@@ -22,10 +22,11 @@ const HomeScreen = () => {
   //   fetchProducts();
   // },[]);
 
+  // .data = axios only not fetch 
   useEffect(() => {
     const fetchProducts = async () => {
       const { data } = await axios.get(`${urlEndpoint}/server/api/products`);
-      setProducts(data);
+      setProducts(data.message);
     };
     fetchProducts();
   }, []);

@@ -17,7 +17,7 @@ const ProductScreen = () => {
       const { data } = await axios.get(
         `${urlEndpoint}/server/api/products/${id}`
       );
-      setProduct(data);
+      setProduct(data.message);
     };
     fetchProduct();
   },[id]);
