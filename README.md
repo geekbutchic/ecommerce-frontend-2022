@@ -68,4 +68,30 @@ import { Routes, Route } from "react-router-dom";
 <Route path="/" element={<ProductScreen/>}>
 </Routes>
 ```
-* Once Routes are established.  Link Container from React Bootstrap will need to be implemented since React Router will not work
+* Once Routes are established.  Link Container from React Bootstrap will need to be implemented since React Router will not work.
+
+### Heroku Frontend Deployment Instructions
+* If not done
+* Initialize repo with 
+* > create-react-app app-name
+* > npm i react-router-dom@6
+* Add .env file.
+* Add environment variable.
+* > REACT_APP_URL_ENDPOINT = http://localhost:4000;
+* Import Browser Router and wrap <App/> in index.js
+```javascript
+import { BrowserRouter } from "react-router-dom";
+
+// wrap <APP/> with <BrowserRouter />
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+```
+* Setup Frontend to be able receive backend data.
+* Git push to main before setting up Heroku remote.
+* 
