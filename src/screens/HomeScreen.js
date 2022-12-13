@@ -11,7 +11,6 @@ const urlEndpoint = process.env.REACT_APP_URL_ENDPOINT;
 const HomeScreen = () => {
   //use state hook
   const [products, setProducts] = useState([]);
-  // const [numEntries, setNumEntries] = useState(0)
 
   // useEffect(() => {
   //   const fetchProducts = async () => {
